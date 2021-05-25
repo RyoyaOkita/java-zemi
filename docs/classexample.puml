@@ -1,0 +1,17 @@
+@startuml ryoyaokita
+title:classexample
+class Student{
+ gakusekibangou
+ name
+ adress
+ tell
+ }
+class Daigaku{
+ gakubu
+ adress
+ tell
+ }
+Student -- Daigaku
+
+
+@enduml
