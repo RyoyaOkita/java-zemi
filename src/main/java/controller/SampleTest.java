@@ -21,9 +21,7 @@ public class SampleTest extends HttpServlet {
         String classes = "Joho<br>\n";
         // 返す html を生成する。
         PrintWriter out = response.getWriter();
-        out.println("<html>\n" + name + "</html>");
-        out.println("<html>\n" + university + "</html>");
-        out.println("<html>\n" + classes + "</html>");
+        out.println("<html>\n" + name + university + classes +   "</html>");
 
     }
 }
