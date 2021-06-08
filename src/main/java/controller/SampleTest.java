@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 @WebServlet("/test")
-public class SampleServlet extends HttpServlet {
+public class SampleTest extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
     }
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -18,12 +18,12 @@ public class SampleServlet extends HttpServlet {
         // なんか処理してるっぽいようにしたいので、文字列を用意する。
         String name = "Okita Ryoya\n";
         String university = "Tokyo Gakugei University\n";
-        String Class = "Joho\n";
+        String classes = "Joho\n";
         // 返す html を生成する。
         PrintWriter out = response.getWriter();
         out.println("<html>\n" + name + "</html>");
         out.println("<html>\n" + university + "</html>");
-        out.println("<html>\n" + Class + "</html>");
+        out.println("<html>\n" + classes + "</html>");
 
     }
 }
