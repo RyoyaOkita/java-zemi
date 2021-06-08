@@ -16,9 +16,9 @@ public class SampleTest extends HttpServlet {
         // html を返す。文字コードは、UTF-8。
         response.setContentType("text/html; charset=UTF-8");
         // なんか処理してるっぽいようにしたいので、文字列を用意する。
-        String name = "Okita Ryoya\n";
-        String university = "Tokyo Gakugei University\n";
-        String classes = "Joho\n";
+        String name = "Okita Ryoya<br>\n";
+        String university = "Tokyo Gakugei University<br>\n";
+        String classes = "Joho<br>\n";
         // 返す html を生成する。
         PrintWriter out = response.getWriter();
         out.println("<html>\n" + name + "</html>");
